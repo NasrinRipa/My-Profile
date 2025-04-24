@@ -1,0 +1,223 @@
+body {
+    font-family: 'EB Garamond', 'Garamond', 'Garamond Premier Pro', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(148, 14, 14, 1.0); /* Maroon with 50% opacity */
+    color: white; /* Ensure white text for readability */
+}
+
+header {
+    background-color: rgba(10, 14, 238, 1.0); /* Deep blue with 50% opacity */
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1A2B5F;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px; /* Adds some space above the footer */
+    font-family: 'EB Garamond', serif; /* Matches your page's font */
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    object-fit: cover;
+    border: 4px solid rgb(124, 6, 134); /* Optional: add a white border */
+}
+
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0ef854; /* Keep the existing hover effect */
+}
+
+/* Removed the old main styling as it's now handled inline */
+
+ul {
+    padding-left: 30px;
+    line-height: 1.6;
+}
+
+ul ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: white; /* Ensure list items are white */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Keep existing additional classes */
+.email-link, .social-links a {
+    color: white; /* Adjust link colors to be visible on maroon background */
+    transition: color 0.3s ease;
+}
+
+.email-link:hover, .social-links a:hover {
+    color: #a221ec;
+}
+
+header h1 {
+    margin: 10px 0; /* Reduce margin around name */
+    font-size: 18px; /* Adjust font size if needed */
+}
+
+nav {
+    margin-top: 5px; /* Reduce nav margin */
+}
+
+.content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px; /* Increased body padding */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.flex-column {
+    flex: 1;
+    border-radius: 10px;
+    padding: 20px;
+}
+/* Specific background colors for each column */
+.flex-column:nth-child(1) {
+    background-color: rgba(128, 0, 128, 0.877); /* Purple with opacity */
+}
+.flex-column:nth-child(2) {
+    background-color: rgb(15, 163, 10); /* Green with opacity */
+}
+.flex-column:nth-child(3) {
+    background-color: rgba(54, 11, 243, 0.904); /* Gold with opacity */
+}
+section {
+    margin-bottom: 30px;
+}
+h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-column {
+        margin-bottom: 20px;
+    }
+
+    /* Reset background colors for mobile view */
+    .flex-column:nth-child(1),
+    .flex-column:nth-child(2),
+    .flex-column:nth-child(3) {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* List styling */
+ul {
+    padding-left: 20px;
+}
+ul ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+        
+.header-content {
+display: flex;
+justify-content: center; /* Center the two columns */
+align-items: center;
+gap: 40px; /* Space between columns */
+margin-bottom: 20px;
+}
+
+.profile-column {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.details-column {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.personal-info {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 5px;
+border-radius: 10px;
+max-width: 500px;
+margin-bottom: 10px;
+}
+
+.flag-img {
+max-width: 100px;
+height: auto;
+border-radius: 5px;
+}
+
+.quote-msg {
+    background-color: rgba(224, 228, 22, 0.849); /* Solid gold background */
+    color: rgb(62, 12, 243); /* Black text for readability */
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
